@@ -69,7 +69,17 @@
     /*border: 1px solid black;*/
     background-color: lightgray;
     padding: 5px;
-    /*animation: shimmer 2s infinite;*/
+    animation: shimmer 2s infinite;
+}
+
+.login-btn{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 
