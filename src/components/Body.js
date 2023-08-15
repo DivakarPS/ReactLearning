@@ -32,7 +32,6 @@ const Body = () => {
             </div>
         )
     }
-
     return (
         <div className="body">
             <div className="filter">
@@ -53,7 +52,7 @@ const Body = () => {
                             }
                             if(filteredRes.length === 0){
                                 alert("No restaurant found");
-                                setFilteredResList(resList);
+                                 setFilteredResList(resList);
                                 setSearchText("");
                             }
                         }}
@@ -62,8 +61,8 @@ const Body = () => {
                 <button
                     className = "filter-btn"
                     onClick={ () => {
-                        const filteredRes = filteredResList.filter( (res) => res.info.avgRating >4.2);
-                        setResList(filteredRes);
+                        const filteredRes = resList.filter( (res) => res.info.avgRating >4.2);
+                        setFilteredResList(filteredRes);
                     } }>Top Rated Restaurants</button>
             </div>
             <div className="res-container">
