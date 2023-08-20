@@ -5,6 +5,7 @@ import Header from "./Header.js";
 import Body from "./Body.js";
 import RestaurantCard  from "./RestaurantCard";
 import Shimmer from "./Shimmer";
+import RestaurantMenu from "./RestaurantMenu";
 
 export {
     About,
@@ -13,5 +14,6 @@ export {
     Header,
     Body,
     RestaurantCard,
-    Shimmer
+    Shimmer,
+    RestaurantMenu
 }

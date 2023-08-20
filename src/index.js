@@ -1,7 +1,8 @@
 import ReactDom from "react-dom/client";
 import React from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import {Header, Body,About, Contact, Error} from "./components/index.js";
+import {Header, Body,About, Contact, Error, RestaurantMenu} from "./components/index.js";
+
 
 
 const styleCard = {
@@ -37,7 +38,12 @@ const appRouter = createBrowserRouter([
             {
                 path: "/",
                 element: <Body />
-            }],
+            },
+            {
+                path: "/restaurant/:resId",
+                element: <RestaurantMenu />
+            }
+        ],
         errorElement: <Error />
     }
 ])
