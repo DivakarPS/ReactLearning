@@ -4,6 +4,7 @@ import {useState, useEffect } from "react";
 import {API_URL} from "../utils/constants";
 import Shimmer from "./Shimmer.js";
 import {Link} from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
 
@@ -23,6 +24,14 @@ const Body = () => {
         catch (error) {
             console.log(error);
         }
+    }
+    const onlineStatus = useOnlineStatus();
+    if(onlineStatus === false){
+        return (
+            <h1>
+                You are offline! please check your internet
+            </h1>
+        )
     }
 
     if(!resList.length) {

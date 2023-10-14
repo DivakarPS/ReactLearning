@@ -1,7 +1,7 @@
 import ReactDom from "react-dom/client";
 import React from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import {Header, Body,About, Contact, Error, RestaurantMenu} from "./components/index.js";
+import {Header, Body, AboutClass, Contact, Error, RestaurantMenu} from "./components/index.js";
 
 
 
@@ -29,7 +29,7 @@ const appRouter = createBrowserRouter([
         children: [
             {
                path: "/about",
-               element: <About />,
+               element: <AboutClass />,
             },
             {
                 path: "/contact",

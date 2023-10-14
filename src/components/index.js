@@ -1,4 +1,4 @@
-import About from "./About.js";
+import AboutClass from "./About.js";
 import Contact from "./Contact.js";
 import Error from "./Error.js";
 import Header from "./Header.js";
@@ -8,7 +8,7 @@ import Shimmer from "./Shimmer";
 import RestaurantMenu from "./RestaurantMenu";
 
 export {
-    About,
+    AboutClass,
     Contact,
     Error,
     Header,

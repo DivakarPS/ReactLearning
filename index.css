@@ -50,6 +50,7 @@
 
 .res-logo{
     width: 100%;
+    height: 235.750px;
     /*height: 160px;*/
     /*padding: 1px;*/
 }
@@ -105,52 +106,12 @@
   /* Other styling properties for the card */
 }
 
-/*.header {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    border: 1px solid black*/
-/*}*/
+.res-cuisines{
+    width: 200px;
+    height: 70px;
+}
 
-/*.logo {*/
-/*    width: 150px;*/
-/*}*/
-
-/*.nav-items {*/
-/*    padding:  0px 20px;*/
-/*}*/
-
-/*.nav-items > ul {*/
-/*    font-size: 20px;*/
-/*    display: flex;*/
-/*    list-style-type: none;*/
-/*}*/
-
-/*.nav-items > ul > li {*/
-/*    padding: 10px;*/
-/*    margin: 10px;*/
-/*    margin-top: 29px;*/
-/*}*/
-
-/*.res-container {*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*}*/
-
-/*.res-card {*/
-/*    margin: 5px;*/
-/*    padding: 5px;*/
-/*    width: 200px;*/
-/*}*/
-
-/*.res-card:hover {*/
-/*    cursor: pointer;*/
-/*    border: 1px solid black;*/
-/*}*/
-
-/*.search {*/
-/*    padding: 10px*/
-/*}*/
-
-/*.res-logo {*/
-/*    width: 100%;*/
-/*}*/
+.user-card{
+    padding:10px;
+    border:1px solid black;
+}
