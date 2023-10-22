@@ -10,7 +10,7 @@ const Header = () => {
     const onlineStatus = useOnlineStatus();
     const Grocery = lazy(() => import('./Grocery'));
     return (
-        <div className="flex justify-between bg-pink-100 shadow-lg mb-2">
+        <div className="flex justify-between bg-green-100 shadow-lg mb-2">
             <div className="logo-container">
                 <img className="w-44" src={LOGO_URL}/>
             </div>

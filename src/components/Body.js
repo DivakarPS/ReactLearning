@@ -20,6 +20,7 @@ const Body = () => {
             const data = await response.json();
             setResList(data.data.cards[2].card.card.gridElements.infoWithStyle.restaurants);
             setFilteredResList(data.data.cards[2].card.card.gridElements.infoWithStyle.restaurants);
+            // console.log(data)
         }
         catch (error) {
             console.log(error);
@@ -37,7 +38,7 @@ const Body = () => {
     if(!resList.length) {
         return (
             <div>
-                 <h1>Loading...</h1>
+                 <h1 className="font-bold text-lg p-4">Loading...</h1>
                  <Shimmer />
             </div>
         )
@@ -70,7 +71,7 @@ const Body = () => {
                 </div>
                 <div className="search m-4 p-4 flex items-center ">
                 <button
-                    className = "flex px-4 py-1 bg-gray-100 rounded-lg"
+                    className = "flex px-4 py-1 bg-gray-100 rounded-lg  hover:bg-gray-400"
                     onClick={ () => {
                         const filteredRes = resList.filter( (res) => res.info.avgRating >4.2);
                         setFilteredResList(filteredRes);
